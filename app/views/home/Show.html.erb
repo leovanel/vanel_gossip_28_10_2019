@@ -1,0 +1,11 @@
+<h1>Accueil</h1></br>
+
+<%@array.each do |liste|%>
+  <p><%=liste.user.name%>: <%=liste.title%><p>
+  <%= link_to "clique ici", detail_gossip_path(liste.id) %>
+  </br>
+  </br>
+  
+  
+  <% end %>
+<p>Find me in app/views/home/Show.html.erb</p>

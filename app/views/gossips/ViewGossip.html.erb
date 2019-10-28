@@ -1,0 +1,14 @@
+<h1>Detail du Gossip </h1>
+
+
+  <p>Auteur : <%=@detail.user.name%><p>
+  <p>Titre : <%=@detail.title%><p>
+  <p>Contenu : <%=@detail.gossip%><p>
+  <p>Date de parution : <%=@detail.date%><p></br>
+  <%= link_to "voir le profil de l'auteur", detail_user_path(@detail.user.id) %>
+
+
+  
+  
+    
+  
