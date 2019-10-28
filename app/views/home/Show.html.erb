@@ -1,11 +1,17 @@
-<h1>Accueil</h1></br>
-
+<center><h1>Accueil</h1></br></center>
 <%@array.each do |liste|%>
-  <p><%=liste.user.name%>: <%=liste.title%><p>
-  <%= link_to "clique ici", detail_gossip_path(liste.id) %>
-  </br>
-  </br>
   
-  
-  <% end %>
-<p>Find me in app/views/home/Show.html.erb</p>
+  <center><div class="card" style="width: 50rem;">
+  <h5 class="card-header"><%=liste.user.name%></h5>
+  <div class="card-body">
+    <h5 class="card-title"><%=liste.title%></h5>
+    
+    <%= link_to "voir le gossip", detail_gossip_path(liste.id) %>
+  </div>
+</div></center>
+</br>
+</br>
+<% end %>
+#lien rails avec Link_to et path, l'argument correspondant à l'entrée de l'array gossips qu'on veut afficher
+
+

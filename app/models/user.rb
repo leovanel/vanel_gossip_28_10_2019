@@ -5,6 +5,7 @@ class User < ApplicationRecord
 		user_array = User.all					
 		return user_array    		
 	end
+	#Permet d'afficher tout les users sous forme d'array
 
 	def self.find(id)
 		
@@ -14,4 +15,5 @@ class User < ApplicationRecord
     
 		return user_id 
 	end
+	#Permet de trouver un user dans l'array en utilisant son id.
 end
