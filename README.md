@@ -9,7 +9,8 @@ Pour ouvrir ce projet rails:
 - Créer la base de donnée Postgrès avec rails db:create
 - Faire les migrations avec rails db:migrate
 - lancer le seed avec rails db:seed
-- lancer le serveur avec rails server
+- lancer le serveur avec rails server,
+et ouvrez l'URL suivante dans votre navigateur:http://localhost:3000/
 
 Ce projet est une application Rails qui s'ouvre sur une page d'accueil 
 ( pouvant être personalisée : localhost/welcome/entrezvotrenom)affichant tout les gossips en base sous forme de card bootstrap.
