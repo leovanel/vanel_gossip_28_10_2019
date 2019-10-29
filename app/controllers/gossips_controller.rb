@@ -1,10 +1,12 @@
 class GossipsController < ApplicationController
-  def ViewGossip
-    @detail = Gossip.find(params['id'])
-    
+  def index
+    @array= Gossip.showall
+  end
+  
+  def show
+    @detail = Gossip.find(params['id']) 
 
   end
-  def ViewProfile
-    @profil = User.find(params['id'])
-  end
+ 
+  
 end

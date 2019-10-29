@@ -6,12 +6,10 @@
   <div class="card-body">
     <h5 class="card-title"><%=liste.title%></h5>
     
-    <%= link_to "voir le gossip", detail_gossip_path(liste.id) %>
+    <%= link_to "voir le gossip", gossip_path(liste.id) %>
   </div>
 </div></center>
 </br>
 </br>
 <% end %>
 #lien rails avec Link_to et path, l'argument correspondant à l'entrée de l'array gossips qu'on veut afficher
-
-

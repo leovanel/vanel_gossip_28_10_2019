@@ -5,7 +5,7 @@
   <p>Titre : <%=@detail.title%><p>
   <p>Contenu : <%=@detail.gossip%><p>
   <p>Date de parution : <%=@detail.date%><p></br>
-  <%= link_to "voir le profil de l'auteur", detail_user_path(@detail.user.id) %>
+  <%= link_to "voir le profil de l'auteur", user_path(@detail.user.id) %>
 
 
   
